@@ -1,0 +1,1666 @@
+
+@charset "utf-8";
+/*
+Template: jstork
+Theme Name: stork_custom
+Theme URI:http://open-cage.com/stork/
+*/
+
+/************************************************
+ *ページ全体の最適化
+***********************************************/
+
+.textwidget p{
+   margin-block-start: 0em;
+
+}
+.widget.widget_text img{
+	margin-bottom: 0em;
+}
+#container {
+	background-color:#F2F2F2;
+}
+
+.home {
+	background-color:#ffffff;
+}
+
+body p{
+	font-size:90%;
+	
+}
+body{
+	font-family: M PLUS Rounded\ 1c, Helvetica, "游ゴシック", YuGothic, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+}
+
+.single .entry-content p{
+	line-height: 2.2;
+}
+.single .entry-content .related_article p{
+	line-height: 1.5;
+}
+
+#main {
+	background-color:#fff;
+}
+
+#breadcrumb {
+	margin-top:26px;
+}
+
+#official-sns{
+ position: fixed;
+ bottom: 20px;
+ left: 20px;
+ z-index: 999;
+
+}
+#official-instagram{
+	 box-shadow: 0 0 8px grey;
+	width: 40px;
+    height: 40px;
+	line-height: 40px;
+ border-radius:50%;
+ background: -moz-linear-gradient(top right, #833AB4, #E1306C 30%, #F56040 60%, #FFDC80);
+ background: -webkit-linear-gradient(top right, #833AB4, #E1306C 30%, #F56040 60%, #FFDC80);
+ background: linear-gradient(to bottom left, #833AB4, #E1306C 30%, #F56040 60%, #FFDC80);
+	text-align:center;
+	font-size: 1.5em;
+	display:inline-block;
+    margin-right: 0.5em;
+}
+#official-twitter{
+	 box-shadow: 0 0 8px grey;
+	width: 40px;
+    height: 40px;
+	line-height: 40px;
+    border-radius:50%;
+	text-align:center;
+	font-size: 1.5em;
+	background-color:#1BB4D3;
+	display:inline-block;
+	margin-right: 0.5em;
+}
+#official-instagram .fa, #official-twitter .fa{
+   color:#fff;	
+}
+@media only screen and (max-width: 834px){
+	#page-top {
+	   bottom:20px;
+	   right:20px;
+	}
+	#page-top a{
+	width: 40px;
+    height: 40px;
+	line-height: 39px;
+    border-radius:50%;
+	font-size:1.2em;
+   }
+}
+
+
+
+/************************************************
+ *記事カードカスタマイズ
+************************************************/
+@media screen and (min-width: 0px) and (max-device-width: 480px) {
+	.top-post-list .post-list{
+        max-height:9.5em;
+        display: flex;
+		z-index: 0;
+width:320px;
+height:120px;
+		margin-left:auto;
+		margin-right:auto;
+	}
+	.top-post-list .post-list a{
+		padding:5px;
+	}
+	
+
+	.top-post-list .post-list .eyecatch{
+		z-index: 1;
+	}
+	
+
+	.top-post-list .post-list .eyecatch img{
+	    z-index: 2;
+		max-height:120px;
+		overflow:hidden;
+	}	
+	
+	.top-post-list .post-list .entry-content {
+        position:relative;
+        margin-left:auto;
+		bottom: 77px;
+        width:65%;
+        z-index: 3;	
+		background-color: white;
+	}
+	.top-post-list .post-list .entry-content .entry-title {
+		position:relative;
+     font-size:12px;
+     height:55px;
+     padding: 5px;
+     overflow:hidden;
+     text-align: left;
+     background-color:white;
+     z-index: 4;
+	}
+	.top-post-list .post-list .entry-content p {
+	position:relative;
+	background-color: white;
+	text-align: right;
+	font-size: 0.8em;
+	padding-bottom:0px;
+	z-index: 5;
+	margin:0;
+	}
+
+}
+
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    
+	.top-post-list .post-list{
+        max-height:14em;
+		padding:0.1em;
+        display: flex;
+		z-index: 0;
+	}
+	.top-post-list .post-list a{
+		padding:5px;
+	}
+	
+
+	.top-post-list .post-list .eyecatch{
+		z-index: 1;
+		height:100%
+	}
+	
+
+	.top-post-list .post-list .eyecatch img{
+	    z-index: 2;
+		height:100%;
+		overflow:hidden;
+		
+	}	
+	
+	.top-post-list .post-list .entry-content {
+        position:relative;
+        margin-left:auto;
+		bottom: 5.8em;
+        width:65%;
+        z-index: 3;	
+		background-color: white;
+	}
+	.top-post-list .post-list .entry-content .entry-title {
+     position:relative;
+     font-size:14px;
+     height:42px;
+     padding: 5px;
+     overflow:hidden;
+     text-align: left;
+     background-color:white;
+     z-index: 4;
+	}
+	.top-post-list .post-list .entry-content p {
+	position:relative;
+	background-color: white;
+	text-align: right;
+	font-size: 12px;
+	padding-bottom:0px;
+	z-index: 5;
+	margin:0;
+	}
+
+	
+	
+}	
+
+@media only screen and (min-width: 769px)  {
+    
+	.top-post-list .post-list{
+        width:768px;
+		height:200px;
+		padding:0.1em;
+        display: flex;
+		z-index: 0;
+		margin-right:auto;
+		margin-left:auto;
+	}
+	.top-post-list .post-list a{
+		padding:5px;
+	}
+	
+
+	.top-post-list .post-list .eyecatch{
+		z-index: 1;
+		height:100%
+	}
+	
+
+	.top-post-list .post-list .eyecatch img{
+	     z-index: 2;
+		height:100%;
+		overflow:hidden;
+		
+	}	
+	
+	.top-post-list .post-list .entry-content {
+        position:relative;
+        margin-left:auto;
+		bottom: 70px;
+        width:65%;
+        z-index: 3;	
+		background-color: white;
+	}
+	.top-post-list .post-list .entry-content .entry-title {
+     position:relative;
+     font-size:14px;
+     height:42px;
+     padding: 5px;
+     overflow:hidden;
+     text-align: left;
+     background-color:white;
+     z-index: 4;
+	}
+	.top-post-list .post-list .entry-content p {
+	position:relative;
+	background-color: white;
+	text-align: right;
+	font-size: 12px;
+	padding-bottom:0px;
+	z-index: 5;
+	margin:0;
+	}
+	.top-post-list .post-list .entry-content .description{
+		display: none;
+	}
+
+
+	
+}
+
+#magazine-wrap{
+	padding:0px;
+}
+.post-list-magazine{
+	margin-left: 1%;
+    margin-right: 1%;
+	
+}
+
+
+
+.post-list-magazine .post-list .entry-content{
+	padding-bottom:0px;
+}
+
+.post-list-magazine .post-list a{
+	border-radius: 1em;
+	background-color:#fff;
+	margin:0.5em;
+	padding:0;
+}
+
+/********カテゴリごとに色を変える***********/
+.post-list-magazine .post-list a{
+    background-color: #b2171c;
+	color:#fff;
+}
+
+ .post-list-magazine .category-resort a, .post-list-magazine .category-resort .eyecatch .cat-name {
+	background-color:#3CADB3;
+	color:#fff;
+}
+.entry-meta span .cat-id-20{
+	background-color:#3CADB3;	
+}
+
+
+ .post-list-magazine .category-americancasual a, .post-list-magazine .category-americancasual .eyecatch .cat-name{
+	background-color:#B3413C;
+	color:#fff;
+}
+
+ .post-list-magazine .category-minimal a, .post-list-magazine .category-minimal .eyecatch .cat-name{
+	background-color:#B33C7E;
+	color:#fff;
+}
+
+ .post-list-magazine .category-britishtraditional a, .post-list-magazine .category-britishtraditional .eyecatch .cat-name{
+	background-color:#B3893C;
+	color:#fff;
+}
+
+ .post-list-magazine .category-frenchcasual a, .post-list-magazine .category-frenchcasual .eyecatch .cat-name{
+	background-color:#218B22;
+	color:#fff;
+}
+ .post-list-magazine .category-work a, .post-list-magazine .category-work .eyecatch .cat-name{
+	background-color:#3CB371;
+	color:#fff;
+}
+
+ .post-list-magazine .category-items a, .post-list-magazine .category-items .eyecatch .cat-name{
+	background-color:#3C66B3;
+	color:#fff;
+}
+ .post-list-magazine .category-lifehack a, .post-list-magazine .category-lifehack .eyecatch .cat-name{
+	background-color:#95B33C;
+	color:#fff;
+}
+
+ .post-list-magazine .category-mode a, .post-list-magazine .category-mode .eyecatch .cat-name{
+	background-color:#515151;
+	color:#fff;
+}
+
+ .post-list-magazine .category-interview a, .post-list-magazine .category-interview .eyecatch .cat-name{
+	background-color:#FFB2B2;
+	color:#fff;
+}
+ .post-list-magazine .category-military a, .post-list-magazine .category-military .eyecatch .cat-name{
+	background-color:#32483A;
+	color:#fff;
+}
+.post-list-magazine .category-vintage a, .post-list-magazine .category-vintage .eyecatch .cat-name, .cat-name-cat-id-26{
+    background-color:#BE1A34;
+	color:#fff;
+}
+
+.post-list-magazine .category-exotic a, .post-list-magazine .category-exotic .eyecatch .cat-name{
+    background-color:#E69B5E;
+	color:#fff;
+}
+
+.post-list-magazine .category-street a, .post-list-magazine .category-street .eyecatch .cat-name{
+    background-color:#393248;
+	color:#fff;
+}
+
+.post-list-magazine .category-feature a, .post-list-magazine .category-feature .eyecatch .cat-name{
+    background-color:#C7747E;
+	color:#fff;
+}
+
+.post-list-magazine .category-korea a, .post-list-magazine .category-korea .eyecatch .cat-name{
+    background-color: #483240;
+	color:#fff;
+}
+
+
+
+/********↑カテゴリごとに色を変える終わり***********/
+
+.eyecatch .cat-name{
+	min-width: 10em;
+}
+
+#main .post-list .eyecatch{
+	margin-left:0;
+	margin-right:0;
+	border-top-left-radius:1em;
+	border-top-right-radius:1em;
+}
+
+.post-list-magazine .post-list .entry-content .entry-title{
+	font-size: 0.85em;
+	padding-right:5px;
+	padding-left:5px;
+	text-align:left;
+}
+.post-list-magazine .post-list .entry-content .description{
+	display:none;
+}
+
+.post-list-magazine .post-list .entry-content .entry-meta{
+	padding-right:0px;
+	padding-left:5px;
+	text-align:right;
+	font-size: .85em;
+}
+.post-list-magazine .post-list .entry-content .entry-meta .date{
+	margin-right: .2em;
+}
+
+.post-list-magazine .post-list .entry-content .entry-meta .author{
+	padding-left:0;
+}
+
+
+
+
+
+
+/************************************
+トップページカスタマイズ
+************************************/
+.home #main  {
+	margin-top:50px;
+	padding:0;
+}
+
+.top-title h3{
+	margin: 0 0 1.5em;
+    font-size: 1.1em;
+	text-align: center;
+
+}
+.top-title h3::before,.top-title h3::after{
+	content:"";
+    display:inline-block;
+    width:15%;
+	height:3px;
+    background-color: #BE1A34;
+    vertical-align: middle;
+	margin-left:5px;
+	margin-right:5px;
+	border-radius:1.5px;
+	
+}
+.top-jump-tocontinue p{
+	text-align: right;
+	font-size: 12px;
+	margin-top:0px;
+	
+}
+.top-post-list{
+	padding-left:1em;
+    padding-right:1em;
+}
+
+
+/************************************
+ * タブ内記事カードカスタマイズ
+ * *****************/
+ul.wpp-list li {
+	border-bottom:1px dotted #ddd;
+	display:flex;
+	z-index:0;
+	height:130px;
+	display:flex;
+	z-index:0;
+	
+}
+
+ul.wpp-list img{
+	width: 180px;
+	height:120px;
+	z-index:1;
+	margin-top:5px;
+}
+ul.wpp-list li a.wpp-post-title{
+	position:relative;
+	margin-left:auto;
+	width:250px;
+	text-align:left;
+	margin-bottom:70px;
+	background-color:white;
+    z-index:2;
+}
+
+ul.wpp-list .wpp-author{
+	z-index:3;
+	background-color:white;
+}
+
+.widgettitle{
+	display:none;
+}
+
+/*--------------------------------------
+  ヘッダーメニュー固定
+--------------------------------------*/
+
+
+.header {
+  position: fixed;/*ヘッダー固定*/
+  top: 0;
+  left: 0;
+  width:100%;
+   border-bottom:0.5px solid #B7B6B7;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, .18);/*ヘッダーに影をつける*/
+}
+
+/*ヘッダーの高さだけコンテンツを下げる*/
+#container{
+  padding-top:60px;/*ヘッダーの高さにあわせて調整*/
+}
+
+/*目次から見出しへ飛ぶリンクのズレを修正*/
+h2 span, h3 span {
+  padding-top: 60px;/*ヘッダーの高さにあわせて調整*/
+  margin-top: -60px;/*ヘッダーの高さにあわせて調整（マイナスは消さない）*/
+}
+
+/*ヘッダーフォント変更*/
+#logo.fs_s .h1.text{
+    font-family: 'Orbitron', sans-serif;
+	font-size:32px;
+	font-weight: lighter; 
+	letter-spacing: 0.1em;
+	
+}
+.nav_btn .text{
+	font-family: 'Orbitron', sans-serif;
+	font-weight: normal; 
+	color:#000000;
+}
+
+.g_nav-sp{
+	margin-top: 0px;
+}
+
+.menu-sp a{
+	color:#3E3E3E;
+	padding: .3em .6em;
+
+}
+.menu-sp li{
+	padding:0em;
+}
+
+
+@media only screen and (max-width: 834px){
+	
+	#logo a img{
+		width: auto;
+		max-height: 26px;
+	}
+	#logo.fs_s a{
+		padding:0;
+	}
+	.nav_btn{
+		height: 25px;
+		padding: .5em 0;
+	}
+	.nav_btn:before, .search_btn:before {
+		font-size:1.2em;
+	}
+
+}
+
+
+/****************************
+ * 固定ページカスタマイズ
+ * **************************/
+/*ライター一覧ページ*/
+.post-382 .entry-title{
+	margin: 0 0 1.5em;
+    padding: 0.8em;
+    border-left: 3px double #BE1A34;
+    font-size: 1.143em;
+    font-weight: bold;
+	text-align: left;
+}
+
+/*着こなしから選ぶページ*/
+.post-42 .entry-title{
+	margin: 0 0 1.5em;
+    padding: 0.8em;
+    font-size: 1.143em;
+    font-weight: bold;
+	text-align: center;
+}
+
+.post-42 .entry-title::before, .post-42 .entry-title::after{
+	content:"";
+    display:inline-block;
+    width:15%px;
+	height:3px;
+    background-color: #BE1A34;
+    vertical-align: middle;
+	margin-left:5px;
+	margin-right:5px;
+	border-radius:1.5px;
+	
+}
+
+/*SHALEについて*/
+#post-847 .entry-title{
+	font-size:1.3em;
+	font-family: 'Orbitron', sans-serif;
+	text-align:center;
+}
+#post-847 .entry-title::before, #post-847 .entry-title::after {
+	content:"";
+    display:inline-block;
+    width:15%;
+	height:3px;
+    background-color: #BE1A34;
+    vertical-align: middle;
+	margin-left:5px;
+	margin-right:5px;
+	border-radius:1.5px;
+}
+
+
+/* 海老名追加---------- ストークタブ機能用CSS ---------- */
+.post-tab-list ul.tab-list {
+	display: flex;
+}
+ 
+.post-tab-list ul li {
+	flex-direction: row;
+	width: 100%;
+	text-align: center;
+	cursor: pointer;
+	padding: 10px;
+	position: relative;
+	background-color: white;
+	font-weight: bold;
+	color:#666
+
+}
+ 
+.post-tab-list ul li.selected {
+	border-bottom:3px double #BE1A34;	/* 選択中のタブの背景色 */
+	color: #000000; 			/* 選択中のタブの文字色 */
+	font-weight: bold;
+}
+ 
+.post-tab-list ul li:not(:first-child){
+	margin-left: auto;
+	margin-right: auto;
+}
+ 
+.post-tab-list ul li.selected::after {
+	position: absolute;
+	content: "";
+	bottom: -8px;
+	left: 50%;
+	margin-left: -8px;
+	opacity: 1;
+	width: 0;
+	height: 0;
+	border-top: 8px solid #2b2b2b;
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	border-top-color: #BE1A34;	/* 選択中のタブの下矢印の色 */
+}
+ 
+.ptl, #main > .top-post-list.unselected, #main > .post-list-card.unselected, #main > .post-list-magazine.unselected, .pagination.unselected {
+ display: none;
+}
+ 
+.ptl.selected {
+	display: block;
+}
+ 
+@media only screen and (max-width: 767px) {
+	.post-tab-list ul.tab-list {
+		display: flex;
+		flex-wrap: wrap;
+	}
+ 
+	.post-tab-list ul li {
+		width: calc(100% - 8px);
+	}
+	
+	.post-tab-list ul li:nth-child(odd){
+		margin: 0 5px 5px 6px;
+	}
+ 
+	.post-tab-list ul li:nth-child(even){
+		margin: 0 5px 5px 0;
+	}
+	
+	.post-tab-list ul li.selected::after {
+		content: none;
+	}
+}
+
+/***************************************
+ *記事ページカスタマイズ
+*********************/
+/****************************
+ 記事タイトル見出し
+ ****************************/
+.category-resort .entry-content h2 {
+ background-color:#3CADB3;
+ color: #fff;
+ padding: 12px 14px 12px 14px ;
+ border-left: none;}
+
+.category-resort .entry-content h3{
+  margin: 0 0 1.5em;
+    padding: 0.8em;
+    border-left: 3px double #3CADB3;
+    font-size: 1.143em;
+    font-weight: bold;
+}
+
+.category-americancasual .entry-content h2 {
+ background-color:#B3413C;
+ color: #fff;
+ padding: 12px 14px 12px 14px ;
+ border-left: none;}
+
+.category-americancasual .entry-content h3{
+  margin: 0 0 1.5em;
+    padding: 0.8em;
+    border-left: 3px double #B3413C;
+    font-size: 1.143em;
+    font-weight: bold;
+}
+.category-minimal .entry-content h2 {
+ background-color:#B33C7E;
+ color: #fff;
+ padding: 12px 14px 12px 14px ;
+ border-left: none;}
+
+.category-minimal .entry-content h3{
+  margin: 0 0 1.5em;
+    padding: 0.8em;
+    border-left: 3px double #B33C7E;
+    font-size: 1.143em;
+    font-weight: bold;
+}
+.category-britishtraditional .entry-content h2 {
+ background-color:#B3893C;
+ color: #fff;
+ padding: 12px 14px 12px 14px ;
+ border-left: none;
+}
+
+.category-britishtraditional .entry-content h3{
+  margin: 0 0 1.5em;
+    padding: 0.8em;
+    border-left: 3px double #B3893C;
+    font-size: 1.143em;
+    font-weight: bold;
+}
+
+
+.category-frenchcasual .entry-content h2 {
+ background-color:#218B22;
+ color: #fff;
+ padding: 12px 14px 12px 14px ;
+ border-left: none;}
+
+.category-frenchcasual .entry-content h3{
+  margin: 0 0 1.5em;
+    padding: 0.8em;
+    border-left: 3px double #218B22;
+    font-size: 1.143em;
+    font-weight: bold;
+}
+.category-work .entry-content h2 {
+ background-color:#3CB371;
+ color: #fff;
+ padding: 12px 14px 12px 14px ;
+ border-left: none;}
+
+.category-work .entry-content h3 {
+  margin: 0 0 1.5em;
+    padding: 0.8em;
+    border-left: 3px double #3CB371;
+    font-size: 1.143em;
+    font-weight: bold;
+}
+.category-items .entry-content h2 {
+ background-color:#3C66B3;
+ color: #fff;
+ padding: 12px 14px 12px 14px ;
+ border-left: none;}
+
+.category-items .entry-content h3{
+    margin: 0 0 1.5em;
+    padding: 0.8em;
+    border-left: 3px double #3C66B3;
+    font-size: 1.143em;
+    font-weight: bold;
+}
+.category-lifehack .entry-content h2 {
+ background-color:#95B33C;
+ color: #fff;
+ padding: 12px 14px 12px 14px ;
+ border-left: none;}
+
+.category-lifehack .entry-content h3{
+  margin: 0 0 1.5em;
+    padding: 0.8em;
+    border-left: 3px double #95B33C;
+    font-size: 1.143em;
+    font-weight: bold;
+}
+
+.category-mode .entry-content h2 {
+ background-color:#515151;
+ color: #fff;
+ padding: 12px 14px 12px 14px ;
+ border-left: none;}
+
+.category-mode .entry-content h3{
+  margin: 0 0 1.5em;
+    padding: 0.8em;
+    border-left: 3px double #515151;
+    font-size: 1.143em;
+    font-weight: bold;
+}
+.category-interview .entry-content h2 {
+ background-color: #FFB2B2;
+ color: #fff;
+ padding: 12px 14px 12px 14px ;
+ border-left: none;}
+
+.category-interview .entry-content h3{
+  margin: 0 0 1.5em;
+    padding: 0.8em;
+    border-left: 3px double  #FFB2B2;
+    font-size: 1.143em;
+    font-weight: bold;
+}
+.category-military .entry-content h2 {
+ background-color:#32483A;
+ color: #fff;
+ padding: 12px 14px 12px 14px ;
+ border-left: none;}
+
+.category-military .entry-content h3{
+  margin: 0 0 1.5em;
+    padding: 0.8em;
+    border-left: 3px double #32483A;
+    font-size: 1.143em;
+    font-weight: bold;
+}
+.category-vintage .entry-content h2 {
+ background-color: #BE1A34;
+ color: #fff;
+ padding: 12px 14px 12px 14px ;
+ border-left: none;}
+
+.category-vintage .entry-content h3{
+  margin: 0 0 1.5em;
+    padding: 0.8em;
+    border-left: 3px double #BE1A34;
+    font-size: 1.143em;
+    font-weight: bold;
+}
+.category-exotic .entry-content h2 {
+ background-color: #E69B5E;
+ color: #fff;
+ padding: 12px 14px 12px 14px ;
+ border-left: none;}
+
+.category-exotic .entry-content h3{
+  margin: 0 0 1.5em;
+    padding: 0.8em;
+    border-left: 3px double #E69B5E;
+    font-size: 1.143em;
+    font-weight: bold;
+}
+
+.category-athleticleisure .entry-content h2 {
+ background-color:#700B83;
+ color: #fff;
+ padding: 12px 14px 12px 14px ;
+ border-left: none;}
+
+.category-athleticleisure .entry-content h3{
+  margin: 0 0 1.5em;
+    padding: 0.8em;
+    border-left: 3px double #700B83;
+    font-size: 1.143em;
+    font-weight: bold;
+}
+
+
+
+
+/**完了済み
+ * 
+ * フレかじ
+ * ミリタリー
+ * リゾート
+ * ビンテージ
+ * アイテム小物
+ * 
+ * **/
+
+
+/*--関連記事・新着記事カスタマイズ--*/
+
+.single .related-box .h_ttl{
+	border-top:1px solid #3E3E3E;
+	border-bottom:1px solid #3E3E3E;
+	text-align: center;
+	margin-left: 0%;
+	margin-bottom:1em;
+}
+.single .authorbox .author-newpost .h_ttl{
+	text-align: center;
+	border-top: 1px solid #3E3E3E;
+    border-bottom: 1px solid #3E3E3E;
+    text-align: center;
+    margin-left: 0%;
+    margin-bottom: 1em;
+}
+
+.single .authorbox .author-newpost li a, .single .related-box li a{
+	color:#fff;
+	background-color:#000;
+    border-radius: 1em;
+}
+.related-box li .eyecatch, .single .authorbox .author-newpost li .eyecatch{
+	border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+}
+.eyecatch .cat-name{
+	border-top-right-radius: 2em;
+}
+.related-box li .ttl, .single .authorbox .author-newpost li .ttl, .related-box li .ttl{
+	font-size: 0.85em;
+    padding-right: 5px;
+    padding-left: 5px;
+	padding-bottom:5px;
+}
+
+.related-box li .date, .single .authorbox .author-newpost li .date{
+	font-size: 0.7em;
+	padding-left: 10px;
+}
+/************************************
+ *人気記事カードカスタマイズ
+ * *****************/
+
+/********
+.wpp-posts-container{
+	position:relative;
+}
+
+.wpp-posts-container .post-list{
+	position:absolute;
+	top:0;
+	left:0;
+}
+******/
+
+
+.page-template-wpp1 #main{
+	position:relative;
+}
+
+
+.popular-title-list h1{
+	display:none;
+}
+
+.page-template-wpp1 #main{
+	padding:0;
+}
+
+.wpp-posts-container .post-list-magazine .post-list a{
+	border-radius: 0em;
+    background-color: #000;
+	color:#fff;
+    margin: 0em;
+    padding: 0;
+	font-size:0.55em;
+	line-height:1;
+}
+
+
+.wpp-posts-container .post-list-magazine .post-list .cat-id-20 a, .cat-id-20,.wpp-posts-container .post-list-magazine .post-list .cat-id-20 .post-cat-id-20 span{
+    background-color: #3CADB3;
+}
+.wpp-posts-container .post-list-magazine .post-list .cat-id-4 a, .cat-id-4,.wpp-posts-container .post-list-magazine .post-list .cat-id-4 .post-cat-id-4 span{
+    background-color: #B3413C;
+}
+.wpp-posts-container .post-list-magazine .post-list .cat-id-8 a, .cat-id-8,.wpp-posts-container .post-list-magazine .post-list .cat-id-8 .post-cat-id-8 span{
+    background-color: #B33C7E;
+}
+.wpp-posts-container .post-list-magazine .post-list .cat-id-22 a, .cat-id-22,.wpp-posts-container .post-list-magazine .post-list .cat-id-22 .post-cat-id-22 span{
+    background-color: #B3893C;
+}
+.wpp-posts-container .post-list-magazine .post-list .cat-id-15 a, .cat-id-15,.wpp-posts-container .post-list-magazine .post-list .cat-id-15 .post-cat-id-15 span{
+    background-color: #3CB371;
+}
+.wpp-posts-container .post-list-magazine .post-list .cat-id-30 a, .cat-id-30 ,.wpp-posts-container .post-list-magazine .post-list .cat-id-30 .post-cat-id-30 span{
+    background-color: #3CB371;
+}
+.wpp-posts-container .post-list-magazine .post-list .cat-id-24 a, .cat-id-24,.wpp-posts-container .post-list-magazine .post-list .cat-id-24 .post-cat-id-24 span{
+    background-color: #3C66B3;
+}
+
+.wpp-posts-container .post-list-magazine .post-list .cat-id-25 a, .cat-id-25,.wpp-posts-container .post-list-magazine .post-list .cat-id-25 .post-cat-id-25 span{
+    background-color: #95B33C;
+}
+.wpp-posts-container .post-list-magazine .post-list .cat-id-23 a, .cat-id-23,.wpp-posts-container .post-list-magazine .post-list .cat-id-23 .post-cat-id-23 span{
+    background-color: #515151;
+}
+.wpp-posts-container .post-list-magazine .post-list .cat-id-59 a, .cat-id-59,.wpp-posts-container .post-list-magazine .post-list .cat-id-59 .post-cat-id-59 span{
+    background-color: #FFB2B2;
+}
+.wpp-posts-container .post-list-magazine .post-list .cat-id-29 a, .cat-id-29,.wpp-posts-container .post-list-magazine .post-list .cat-id-29 .post-cat-id-29 span{
+    background-color: #32483A;
+}
+.wpp-posts-container .post-list-magazine .post-list .cat-id-26 a, .cat-id-26,.wpp-posts-container .post-list-magazine .post-list .cat-id-26 .post-cat-id-26 span{
+    background-color: #BE1A34;
+}
+.wpp-posts-container .post-list-magazine .post-list .cat-id-28 a, .cat-id-28,.wpp-posts-container .post-list-magazine .post-list .cat-id-28 .post-cat-id-28 span{
+    background-color: #E69B5E;
+}
+.wpp-posts-container .post-list-magazine .post-list .cat-id-57 a, .cat-id-57,.wpp-posts-container .post-list-magazine .post-list .cat-id-57 .post-cat-id-57 span{
+    background-color: #393248;
+}
+.wpp-posts-container .post-list-magazine .post-list .cat-id-42 a, .cat-id-42,.wpp-posts-container .post-list-magazine .post-list .cat-id-42 .post-cat-id-42 span{
+    background-color: #C7747E;
+}
+.wpp-posts-container .post-list-magazine .post-list .cat-id-56 a, .cat-id-56,.wpp-posts-container .post-list-magazine .post-list .cat-id-56 .post-cat-id-56 span{
+    background-color: #483240;
+}
+
+.wpp-posts-container .post-list-magazine .post-list .cat-id-98 a, .cat-id-98,.wpp-posts-container .post-list-magazine .post-list .cat-id-98 .post-cat-id-98 span{
+    background-color: #700B83;
+}
+
+
+
+
+.wpp-card{
+	border-radius: 1em;
+    padding: 0;
+	overflow:hidden;
+    
+}
+.wpp-card-title h2{
+	padding-right: 5px;
+    padding-left: 5px;
+}
+.post-thumbnail a{
+	margin: 0;
+    height: auto;
+}
+
+
+
+.wpp-card .wpp-date{
+	color:#fff;
+	margin-left:1em;
+}
+.wpp-card .wpp-author{
+	color:#fff;	
+	margin-left:0.4em;
+	margin-right:0.4em;
+}
+
+.wpp-posts-container .post-list-magazine .post-list .wpp-date a , .wpp-posts-container .post-list-magazine .post-list .wpp-author a{
+	font-size:0.7em;
+}
+
+.wpp-card .post-thumbnail{
+	position:relative;
+}
+.wpp-card .post-thumbnail img{
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+}
+
+.wpp-card  .post-thumbnail  span{
+	position:absolute;
+	top:0;
+	right:0;
+	color:#fff;
+	padding-right:10px;
+    padding-left:5px;
+	border-top-right-radius: 1em;
+}
+.wpp-posts-container .post-list-magazine .post-list .post-thumbnail span{
+	font-size:.65em;
+}
+
+
+
+/***********************************
+ * フッターカスタマイズ
+ ****************************/
+@media only screen and (max-width: 480px){
+   #footer-top　{
+	   text-align:center;
+   }
+
+
+   #footer-top .footer-title {
+	   margin-top:20px;
+	   font-size:14px;
+	   text-align:center;
+   }
+
+   #footer-top .footer-description{
+	   margin-top:5px;
+	   font-size:9px;
+	   text-align:center;
+   }
+   #footer-top .footer-contents1{
+	   display:table;
+	   margin-left:auto;
+   	   margin-right:auto;
+   }	
+
+
+   #footer-top .footer-link1{
+       display:table-cell;
+	   font-size:9px;
+	   padding:5px;
+
+   }
+   #footer-top .footer-link1:after{
+	   height:10px;
+	   color:white;
+	   width:1px;
+   }
+
+   #footer-top .footer-link2{
+	   display:table-cell;
+	   font-size:9px;
+	   padding:5px;
+   }
+
+   #footer-top .footer-link3{
+	   display:table-cell;
+	   font-size:9px;
+	   padding:5px;
+   }
+   #footer-top .footer-link4{
+	   margin-top:10px;
+	   font-size:9px;
+   }
+
+   #footer-top .textwidget{
+	   text-align:center;
+	    margin-left:auto;
+	   margin-right:auto;
+   }
+}
+	
+@media only screen and (min-width: 481px){
+   #footer-top　{
+	   text-align:left;
+   }
+	#footer-top .footer-link1 p{
+		margin:5px
+	}
+	#footer-top .footer-link2 p{
+		margin:5px
+	}
+	#footer-top .footer-link3 p{
+		margin:5px
+	}
+	#footer-top .footer-link1 a{
+		font-size:0.8em;
+	}
+	#footer-top .footer-link2 a{
+		font-size:0.8em;
+	}
+	#footer-top .footer-link3 a{
+		font-size:0.8em;
+	}
+	#footer-top .footer-link4 a{
+		font-size:0.8em;
+	}
+	#footer-top .footer-title{
+		font-size:1em;
+	}
+	#footer-top .footer-description {
+		font-size:0.8em;
+	}
+}
+.footer_snstitle p{
+	font-size:0.8em;
+	margin-block-end:0.6em;
+}
+#footer_sns .fa{
+	font-size:1.5em;
+	margin-right:0.2em;
+	margin-left:0.2em;
+	
+}
+#footer_sns {
+	margin-bottom:1em;
+}
+
+/************************************
+ * ハンバーガー・検索カスタマイズ
+ * ******************************/
+
+@media only screen and (max-width: 1166px){
+
+   #menu-hamburger .menu-item {
+	   background-color:none;
+   }
+
+   #menu-hamburger  li{
+	   margin:5px;
+		
+   }
+
+   #menu-hamburger .menu-item a{
+       color:white;
+	   font-weight:black;
+   }
+   #menu-hamburger .menu-item a:after{
+	   color:white;
+   }
+}
+   .remodal-close .text{
+	font-family: 'Orbitron', sans-serif;
+}
+
+.searchbox input[type="search"]{
+	font-family: 'Orbitron', sans-serif;
+}
+.search dt{
+	font-family: 'Orbitron', sans-serif;
+}
+
+.nvsns_title p{
+	font-size:1em;
+	text-align:center;
+	font-family: 'Orbitron';
+	color:#fff;
+}
+#nvsns {
+	text-align:center;
+}
+#nvsns .fa{
+	font-size:2.5em;
+	margin-left:0.5em;
+	margin-right:0.5em;
+	color:#fff;
+}
+
+.svsns_title p{
+	font-size:0.9em;
+	text-align:center;
+	font-family: 'Orbitron';
+	color:#fff;
+}
+#svsns {
+	text-align:center;
+}
+#svsns .fa{
+	font-size:2.4em;
+	margin-left:0.3em;
+	margin-right:0.3em;
+	color:#fff;
+}
+.remodal{
+	background: none;
+}
+@media only screen and (max-width: 834px){
+	.sp_g_nav > li > a {
+	background-color:none;
+	}
+	.sp_g_nav li{
+	   border-top:1px dotted #fff;
+	   border-bottom:1px dotted #fff;	
+	}
+	.sp_g_nav li + li, .sp_g_nav li li:first-child {
+	   border-top:1px dotted #fff;	
+	   border-bottom:1px dotted #fff;	
+	}
+
+}
+
+
+/*********************
+ * SABカスタマ
+ * ********************/
+
+
+
+.authorbox .h_ttl{
+	position: relative;
+    font-size: 12px;
+    text-align: left;
+    margin-top: 0.5em;
+    margin-bottom: 0em;
+    margin-left: 18%;
+    padding: 0.5em .1em;
+    top: 1.0em;
+}
+
+.authorbox, .single .related-box{
+    margin-top:20px;	
+}
+
+ .authorbox .profile img{
+	height:80%;
+	border:0px;
+	border-radius:50%
+}
+.single .authorbox .profile .name{
+	margin:5px;
+	border-left:5px;
+}
+@media only screen and (min-width: 481px) and (max-width: 768px){
+	.authorbox .profile img{
+		position:relative;
+		bottom:1.5em;
+		
+   }
+	.single .authorbox .h_ttl{
+		margin-left:16%;
+	}
+	.single .authorbox .profile .profile_description {
+		padding-left: 16%;
+	}
+}
+@media only screen and (min-width: 769px)  {
+    .authorbox .profile img{
+		position:relative;
+		bottom:1em;
+   }
+	.single .authorbox .h_ttl{
+		margin-left:17%;
+	}
+	.single .authorbox .profile .profile_description {
+		padding-left: 12%;
+	}
+	.archivettl .profile img{
+		bottom:10px;
+		left:10px;
+		
+	}
+
+}
+@media only screen and (min-width: 1000px)  {
+		.archivettl .profile img{
+		bottom:10px;
+		left:10px;
+		
+	}
+}
+
+/***********************
+ヘッダー部分微調整 
+* **************/
+#main .article header{
+	margin-bottom:0em;
+}
+
+/************************************
+ * ライター一覧ページ
+ * *********************************/
+
+.writer-list h1{
+	display:none;
+}
+
+
+.writer-profile {
+	border:1px solid #333;
+    padding:20px;
+	display:inline-block;
+	margin-bottom:10px;
+
+}
+.writer-profile .eyecatch {
+	margin-top:1.5em;
+    width: 16%;
+	float:left;
+	
+}
+.writer-profile .eyecatch img{
+	border-radius:50%;
+	
+}
+.writer-profile .name {
+    margin-left:18%;
+	margin-bottom:0;
+    font-size: 1em;
+}
+
+.writer-profile .description {
+
+    margin-left:18%;
+    font-size: 0.8em;
+}
+@media only screen and (min-width: 481px) and (max-width: 768px){
+	
+   .writer-profile .eyecatch {
+	   margin-top:0.5em;
+   }
+	.writer-profile .name{
+		margin-left: 16%;
+	}
+	.writer-profile .description{
+		margin-left: 16%;
+	}
+}
+@media only screen and (min-width: 769px)  {
+	.writercard{
+		margin-left:auto;
+		margin-right:auto;
+		width:800px;
+	}
+	.writer-profile{
+		margin-left:auto;
+		margin-right:auto;
+		width:800px;
+	}
+	 .writer-profile .eyecatch {
+	   margin-top:0.5em;
+   }
+	.writer-profile .name{
+		margin-left: 10%;
+	}
+	.writer-profile .description{
+		margin-left: 10%;
+	}
+}
+
+/***********************
+ ライターページのライターボックスカスタマイズ
+**********************/
+
+.archivettl .author {
+	padding-left: 18%;
+	border-left:5px;
+    font-size: 1em;
+	margin-top:0;
+	margin-bottom:0;
+}
+.archivettl .author a{
+	color: #444;
+	font-weight:bold;
+}
+
+.archivettl .profile img{
+	border-radius:50%;
+	width: 13%;
+    float: left;
+}
+.archivettl .profile .profile_description{
+	padding-left: 18%;
+    font-size: 0.8em;
+	color: #444;
+}
+.archivettl .profile .gf{
+	font-size: 0.8em;
+}
+
+.archivettl h1 span{
+	font-size: 0.8em;
+}
+.archivettl h1 span::before, .archivettl h1 span::after{
+	content:"";
+    display:inline-block;
+    width:15%;
+	height:3px;
+    background-color: #BE1A34;
+    vertical-align: middle;
+	margin-left:5px;
+	margin-right:5px;
+	border-radius:1.5px;
+}
+@media only screen and (max-width: 360px)  {
+	.archivettl h1 span::before, .archivettl h1 span::after{
+	   width:9%;
+	   margin-left: 3px;
+       margin-right: 3px;
+	}
+	.archivettl h1{
+		padding:0px;
+	}
+	
+}
+
+
+/***********************
+リンク構造ライターカード
+**********************/
+
+.writercard {
+    position: relative;
+    z-index: 1; /* リンク要素の重なりのベース順序指定 */
+}
+.writercard a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-indent:-999px;
+    z-index: 2; /* リンク要素の重なりのベース順序指定 */
+}
+.writercard a.inlink {
+    position: relative; /*「別リンク」は普通に配置するため */
+    z-index: 3; /* リンク要素の重なり順を上にするため */
+}
+
+/****************
+ 2段構え、トップもジャンルも
+*****************/
+#wrap {
+ width: 95%;
+	margin-top:2em;
+	margin-left:auto;
+	margin-right:auto;
+ overflow: hidden;
+}
+.box1 {
+ width: 49%;
+ float: left;
+	margin-bottom:10px
+}
+.box2 {
+ width: 49%;
+ float: right;
+	margin-bottom:10px
+
+}
+
+/**************
+ジャンル一覧ページ、こうなりたいページのCSS
+*********************/
+.page-id-2931 .top-title h2, .page-id-42 .top-title h2{
+   display:none;
+}
+
+
+
+/***********************
+ トップページのサイト説明文
+***********************/
+.top-site-description p{
+margin-top:15px;
+ font-size: 0.85em;
+ text-align: center;
+ font-family:"Helvetica";
+ font-weight:bold;
+ line-height: 250%;
+ margin-bottom:20px;
+}
+@media only screen and (max-width: 360px)  {
+	.top-site-description p{
+       font-size: 0.7em;
+	}
+		
+   .top-title h3::before, .top-title h3::after{
+       width: 9%;
+}
+
+	}
+
+
+
+/*************
+ライター名と日付の前にロゴ挿入したい
+*************/
+.wpp-author a::before{
+    font-family: "fontawesome";
+    content: "\f007";
+    font-size: .88em;
+    margin-right: .3em;
+}
+.wpp-date a::before{
+font-family: "fontawesome";
+  content: "\f274";
+  font-size: .88em;
+  margin-right: .3em;
+ 
+}
+
+/*****
+ 検索おすすめ
+ * ******/
+
+.remodalwords a{
+	color:white;
+}
+
+
+
+#nvsns .nvtwitter:before{
+content:"\f099";
+color:red;
+
+}
+
+
+
+#nvsns .nvtwitter{
+color:black;
+	width:5px;
+	height:5px;
+}
+
+/************
+おっぱい
+***************/
+.wpp-date, .wpp-author{
+  display:inline-block;
+}
+
+
+.wpp-posts-container{
+	position: relative;
+    height: 100%;
+	-webkit-column-count: 2;
+  -webkit-column-gap: 0.4em;
+  -webkit-column-fill: auto;
+  -moz-column-count: 2;
+  -moz-column-gap: 0.4em;
+  -moz-column-fill: balance !important;
+  column-count: 2;
+  column-gap: 0.4em;
+  column-fill: auto;
+  padding:0.4em;
+}
+.wpp-posts-container .post-list{
+    display: inline-block;
+    -webkit-column-break-inside: avoid;
+    -moz-column-break-inside: avoid;
+    column-break-inside: avoid;
+	width:100%;
+	float:none;
+	
+}
+.wpp-posts-container .post-list-magazine{
+	margin:0;
+}
+
