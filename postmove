@@ -1,3 +1,18 @@
+<div class="prev np-post-list">
+<?php $nextpost = get_adjacent_post(false, '', false); if ($nextpost) : ?>
+<a href="<?php echo get_permalink($nextpost->ID); ?>" class="cf">
+<figure class="eyecatch"><?php echo get_the_post_thumbnail($nextpost->ID,'thumbnail'); ?></figure>
+<span class="ttl"><?php echo esc_attr($nextpost->post_title); ?></span>
+</a>
+<?php else:?>
+<div class="home_link">
+<a href="<?php echo esc_url(home_url()); ?>"><figure class="eyecatch"><i class="fa fa-home"></i></figure><span class="ttl">トップページへ</span></a>
+</div>
+<?php endif; ?>
+</div>
+
+
+
 <div class="next np-post-list">
 <?php $prevpost = get_adjacent_post(false, '', true); if ($prevpost) : ?>
 <a href="<?php echo get_permalink($prevpost->ID); ?>" class="cf">
@@ -11,4 +26,4 @@
 <?php endif; ?>
 </div>
 
-partssinglefoot.php の
+partssinglefoot.php の line3
