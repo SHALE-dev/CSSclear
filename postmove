@@ -1,3 +1,6 @@
+<div class="np-post">
+<div class="navigation">
+
 <div class="prev np-post-list">
 <?php $nextpost = get_adjacent_post(false, '', false); if ($nextpost) : ?>
 <a href="<?php echo get_permalink($nextpost->ID); ?>" class="cf">
@@ -26,4 +29,9 @@
 <?php endif; ?>
 </div>
 
-partssinglefoot.php の line3
+
+</div>
+</div>
+
+
+partssinglefoot.php の line1
