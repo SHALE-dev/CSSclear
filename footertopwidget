@@ -1,0 +1,31 @@
+
+	<?php if(!is_page_template( 'page-lp.php' ) && !is_singular( 'post_lp' )): ?>
+
+		<div id="footer-top" class="cf">
+	
+			<?php if ( is_mobile() && is_active_sidebar( 'footer-sp' )) : ?>
+				<?php dynamic_sidebar( 'footer-sp' ); ?>
+			<?php else:?>
+				<?php if ( is_active_sidebar( 'footer1' ) ) : ?>
+				<div class="m-all t-1of2 d-1of3">
+				<?php dynamic_sidebar( 'footer1' ); ?>
+				</div>
+				<?php endif; ?>
+				
+				<?php if ( is_active_sidebar( 'footer2' ) ) : ?>
+				<div class="m-all t-1of2 d-1of3">
+				<?php dynamic_sidebar( 'footer2' ); ?>
+				</div>
+				<?php endif; ?>
+				
+				<?php if ( is_active_sidebar( 'footer3' ) ) : ?>
+				<div class="m-all t-1of2 d-1of3">
+				<?php dynamic_sidebar( 'footer3' ); ?>
+				</div>
+				<?php endif; ?>
+			<?php endif; ?>
+
+		</div>
+
+		
+	<?php endif; ?>
